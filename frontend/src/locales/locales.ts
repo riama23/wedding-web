@@ -117,9 +117,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
     de: 'Hochzeit von Monika & Enrique'
   },
   'footer-email': {
-    es: 'info@monika-enrique.com',
-    en: 'info@monika-enrique.com',
-    de: 'info@monika-enrique.com'
+    es: "info{'@'}monika-enrique.com",
+    en: "info{'@'}monika-enrique.com",
+    de: "info{'@'}monika-enrique.com"
   },
   'footer-monika_phone': {
     es: '+34 659003162',

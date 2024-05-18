@@ -1,7 +1,9 @@
 <template>
   <footer class="c-footer">
     <p class="display-2">{{ $t('footer-title') }}</p>
-    <a :href="`mailto:${$t('footer-email')}`">{{ $t('footer-email') }}</a>
+    <a :href="`mailto:${$t('footer-email')}`">
+      {{ $t('footer-email') }}
+    </a>
     <a :href="`tel:${$t('footer-monika_phone')}`"
       ><strong>Monika:</strong> {{ $t('footer-monika_phone') }}</a
     >
