@@ -41,8 +41,10 @@ import dayjs from 'dayjs'
 const $dayjs = inject('dayjs', dayjs)
 
 const { t, locale } = useI18n()
-const weddingDate = $dayjs(t('wedding_date')).locale(useI18n().locale.value).format('DD MMMM YYYY')
 const futureDate = $dayjs(`${t('wedding_date')} ${t('wedding_time')}`)
+const weddingDate = ref(
+  $dayjs(t('wedding_date')).locale(useI18n().locale.value).format('DD MMMM YYYY')
+)
 
 const countdown = () => {
   const now = $dayjs()
@@ -59,7 +61,10 @@ const countdownUpdated = ref(countdown())
 
 const interval = setInterval(() => (countdownUpdated.value = countdown()), 1000)
 
-watch(locale, () => (countdownUpdated.value = countdown()))
+watch(locale, () => {
+  countdownUpdated.value = countdown()
+  weddingDate.value = $dayjs(t('wedding_date')).locale(locale.value).format('DD MMMM YYYY')
+})
 
 onMounted(() => interval)
 onUnmounted(() => clearInterval(interval))
