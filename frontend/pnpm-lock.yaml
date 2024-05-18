@@ -9,22 +9,27 @@ specifiers:
   '@vue/eslint-config-typescript': ^12.0.0
   '@vue/tsconfig': ^0.5.1
   autoprefixer: ^10.4.17
+  dayjs: ^1.11.11
   eslint: ^8.49.0
   eslint-plugin-vue: ^9.17.0
   npm-run-all2: ^6.1.1
   pinia: ^2.1.7
   postcss: ^8.4.35
   prettier: ^3.0.3
+  sass: ^1.77.2
   tailwindcss: ^3.4.1
   typescript: ~5.3.0
   vite: ^5.0.11
   vue: ^3.4.15
+  vue-i18n: '9'
   vue-router: ^4.2.5
   vue-tsc: ^1.8.27
 
 dependencies:
+  dayjs: registry.npmjs.org/dayjs/1.11.11
   pinia: registry.npmjs.org/pinia/2.1.7_nuolzijptwocrk6pxx3qaubi3y
   vue: registry.npmjs.org/vue/3.4.20_typescript@5.3.3
+  vue-i18n: registry.npmjs.org/vue-i18n/9.13.1_vue@3.4.20
   vue-router: registry.npmjs.org/vue-router/4.3.0_vue@3.4.20
 
 devDependencies:
@@ -41,9 +46,10 @@ devDependencies:
   npm-run-all2: registry.npmjs.org/npm-run-all2/6.1.2
   postcss: registry.npmjs.org/postcss/8.4.35
   prettier: registry.npmjs.org/prettier/3.2.5
+  sass: registry.npmjs.org/sass/1.77.2
   tailwindcss: registry.npmjs.org/tailwindcss/3.4.1
   typescript: registry.npmjs.org/typescript/5.3.3
-  vite: registry.npmjs.org/vite/5.1.4_@types+node@20.11.20
+  vite: registry.npmjs.org/vite/5.1.4_lop4sx64fkvzizeh3waya4iyoa
   vue-tsc: registry.npmjs.org/vue-tsc/1.8.27_typescript@5.3.3
 
 packages:
@@ -417,6 +423,33 @@ packages:
     name: '@humanwhocodes/object-schema'
     version: 2.0.2
     dev: true
+
+  registry.npmjs.org/@intlify/core-base/9.13.1:
+    resolution: {integrity: sha512-+bcQRkJO9pcX8d0gel9ZNfrzU22sZFSA0WVhfXrf5jdJOS24a+Bp8pozuS9sBI9Hk/tGz83pgKfmqcn/Ci7/8w==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/@intlify/core-base/-/core-base-9.13.1.tgz}
+    name: '@intlify/core-base'
+    version: 9.13.1
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/message-compiler': registry.npmjs.org/@intlify/message-compiler/9.13.1
+      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.13.1
+    dev: false
+
+  registry.npmjs.org/@intlify/message-compiler/9.13.1:
+    resolution: {integrity: sha512-SKsVa4ajYGBVm7sHMXd5qX70O2XXjm55zdZB3VeMFCvQyvLew/dLvq3MqnaIsTMF1VkkOb9Ttr6tHcMlyPDL9w==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/@intlify/message-compiler/-/message-compiler-9.13.1.tgz}
+    name: '@intlify/message-compiler'
+    version: 9.13.1
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.13.1
+      source-map-js: registry.npmjs.org/source-map-js/1.0.2
+    dev: false
+
+  registry.npmjs.org/@intlify/shared/9.13.1:
+    resolution: {integrity: sha512-u3b6BKGhE6j/JeRU6C/RL2FgyJfy6LakbtfeVF8fJXURpZZTzfh3e05J0bu0XPw447Q6/WUp3C4ajv4TMS4YsQ==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/@intlify/shared/-/shared-9.13.1.tgz}
+    name: '@intlify/shared'
+    version: 9.13.1
+    engines: {node: '>= 16'}
+    dev: false
 
   registry.npmjs.org/@isaacs/cliui/8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/@isaacs/cliui/-/cliui-8.0.2.tgz}
@@ -851,7 +884,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: registry.npmjs.org/vite/5.1.4_@types+node@20.11.20
+      vite: registry.npmjs.org/vite/5.1.4_lop4sx64fkvzizeh3waya4iyoa
       vue: registry.npmjs.org/vue/3.4.20_typescript@5.3.3
     dev: true
 
@@ -1315,6 +1348,12 @@ packages:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz}
     name: csstype
     version: 3.1.3
+
+  registry.npmjs.org/dayjs/1.11.11:
+    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/dayjs/-/dayjs-1.11.11.tgz}
+    name: dayjs
+    version: 1.11.11
+    dev: false
 
   registry.npmjs.org/de-indent/1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/de-indent/-/de-indent-1.0.2.tgz}
@@ -1850,6 +1889,12 @@ packages:
     name: ignore
     version: 5.3.1
     engines: {node: '>= 4'}
+    dev: true
+
+  registry.npmjs.org/immutable/4.3.6:
+    resolution: {integrity: sha512-Ju0+lEMyzMVZarkTn/gqRpdqd5dOPaz1mCZ0SH3JV6iFw81PldE/PEB1hWVEA288HPt4WXW8O7AWxB10M+03QQ==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/immutable/-/immutable-4.3.6.tgz}
+    name: immutable
+    version: 4.3.6
     dev: true
 
   registry.npmjs.org/import-fresh/3.3.0:
@@ -2599,6 +2644,18 @@ packages:
       queue-microtask: registry.npmjs.org/queue-microtask/1.2.3
     dev: true
 
+  registry.npmjs.org/sass/1.77.2:
+    resolution: {integrity: sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/sass/-/sass-1.77.2.tgz}
+    name: sass
+    version: 1.77.2
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: registry.npmjs.org/chokidar/3.6.0
+      immutable: registry.npmjs.org/immutable/4.3.6
+      source-map-js: registry.npmjs.org/source-map-js/1.0.2
+    dev: true
+
   registry.npmjs.org/semver/7.6.0:
     resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/semver/-/semver-7.6.0.tgz}
     name: semver
@@ -2892,7 +2949,7 @@ packages:
     version: 1.0.2
     dev: true
 
-  registry.npmjs.org/vite/5.1.4_@types+node@20.11.20:
+  registry.npmjs.org/vite/5.1.4_lop4sx64fkvzizeh3waya4iyoa:
     resolution: {integrity: sha512-n+MPqzq+d9nMVTKyewqw6kSt+R3CkvF9QAKY8obiQn8g1fwTscKxyfaYnC632HtBXAQGc1Yjomphwn1dtwGAHg==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/vite/-/vite-5.1.4.tgz}
     id: registry.npmjs.org/vite/5.1.4
     name: vite
@@ -2927,6 +2984,7 @@ packages:
       esbuild: registry.npmjs.org/esbuild/0.19.12
       postcss: registry.npmjs.org/postcss/8.4.35
       rollup: registry.npmjs.org/rollup/4.12.0
+      sass: registry.npmjs.org/sass/1.77.2
     optionalDependencies:
       fsevents: registry.npmjs.org/fsevents/2.3.3
     dev: true
@@ -2969,6 +3027,21 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  registry.npmjs.org/vue-i18n/9.13.1_vue@3.4.20:
+    resolution: {integrity: sha512-mh0GIxx0wPtPlcB1q4k277y0iKgo25xmDPWioVVYanjPufDBpvu5ySTjP5wOrSvlYQ2m1xI+CFhGdauv/61uQg==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/vue-i18n/-/vue-i18n-9.13.1.tgz}
+    id: registry.npmjs.org/vue-i18n/9.13.1
+    name: vue-i18n
+    version: 9.13.1
+    engines: {node: '>= 16'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@intlify/core-base': registry.npmjs.org/@intlify/core-base/9.13.1
+      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.13.1
+      '@vue/devtools-api': registry.npmjs.org/@vue/devtools-api/6.6.1
+      vue: registry.npmjs.org/vue/3.4.20_typescript@5.3.3
+    dev: false
 
   registry.npmjs.org/vue-router/4.3.0_vue@3.4.20:
     resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==, registry: https://gitlab.com/api/v4/packages/npm/, tarball: https://registry.npmjs.org/vue-router/-/vue-router-4.3.0.tgz}
