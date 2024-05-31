@@ -5,7 +5,9 @@
       <h1 class="c-homeview__hero__title display-1" v-html="$t('home-title')"></h1>
       <p class="c-homeview__hero__countdown display-2">{{ countdownUpdated }}</p>
 
-      <button class="button box">{{ $t('home-cta') }}</button>
+      <button class="button box">
+        <RouterLink to="rsvp">{{ $t('home-cta') }}</RouterLink>
+      </button>
     </div>
 
     <div class="c-homeview__resume">
