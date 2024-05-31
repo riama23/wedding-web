@@ -52,9 +52,70 @@ html {
 }
 
 #app {
-  @apply flex flex-col min-h-screen items-center w-full bg-ocher/10;
+  @apply grid min-h-screen items-center w-full bg-ocher/10;
+
+  grid-template-rows: auto 1fr auto;
 
   > * {
     @apply w-full;
   }
+}
+
+main {
+  @apply flex justify-center h-full py-32;
+  @apply max-md:px-8 max-md:py-16;
+
+  background-image: url('../images/jazmin.png'), url('../images/jazmin-v2.png');
+  background-position:
+    top right,
+    bottom left;
+  background-repeat: no-repeat, no-repeat;
+
+  @media (max-width: 768px) {
+    background-size: 280px, 180px;
+  }
+}
+
+.button {
+  @apply flex gap-2 px-8 py-1 text-white bg-dark-green rounded-full;
+  @apply  text-[16px];
+  @apply transition-transform duration-300 ease-in-out;
+
+  &:hover {
+    @apply transform scale-105;
+  }
+}
+
+.box {
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(from var(--border-angle), #778169, #778169 5%);
+
+  border: solid 3px transparent;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    #778169 0%,
+    #a1bd79 30%,
+    #a1bd79 60%,
+    #778169 100%
+  );
+
+  background:
+    var(--main-bg) padding-box,
+    var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 1.5s linear infinite;
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+}
+
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0turn;
 }

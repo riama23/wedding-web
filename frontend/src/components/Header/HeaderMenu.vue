@@ -52,7 +52,7 @@ const links = [
   { name: 'link-story', path: '/love-story' },
   { name: 'link-rsvp', path: '/rsvp' },
   { name: 'link-wedding_list', path: '/wedding-list' },
-  { name: 'link-oyher-information', path: '/other-information' }
+  { name: 'link-other-information', path: '/other-information' }
 ]
 
 const langs = [
@@ -91,7 +91,7 @@ watch(isOpen, () => {
       @apply py-1 px-2 text-center;
 
       &.router-link-active {
-        @apply border-b-2 border-b-gold;
+        @apply border-b-2 border-b-gold font-bold;
       }
     }
   }

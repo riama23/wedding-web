@@ -1,14 +1,16 @@
 <template>
-  <main class="c-homeview">
+  <div class="c-homeview">
     <div class="c-homeview__hero">
-      <p class="c-homeview__hero__date subtitle-1">{{ weddingDate }}</p>
-      <h1 class="c-homeview__hero__title display-1">{{ $t('home-title') }}</h1>
+      <p class="c-homeview__hero__date subtitle-1 font-bold">{{ weddingDate }}</p>
+      <h1 class="c-homeview__hero__title display-1" v-html="$t('home-title')"></h1>
       <p class="c-homeview__hero__countdown display-2">{{ countdownUpdated }}</p>
+
+      <button class="button box">{{ $t('home-cta') }}</button>
     </div>
 
     <div class="c-homeview__resume">
       <div class="c-homeview__resume__box">
-        <img src="../assets/images/party.png" alt="" />
+        <img src="../assets/images/glasses.png" alt="" />
         <h2 class="c-homeview__resume__box__title" v-html="$t('home-resume-preparty')"></h2>
       </div>
       <div class="c-homeview__resume__box">
@@ -30,7 +32,7 @@
       <h2 class="display-2 font-medium" v-html="$t('home-information-restaurant')"></h2>
       <p v-html="$t('home-information-restaurant-content')"></p>
     </div>
-  </main>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -53,9 +55,8 @@ const countdown = () => {
   const days = Math.floor(diff / (1000 * 60 * 60 * 24))
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24)
   const minutes = Math.floor((diff / 1000 / 60) % 60)
-  const seconds = Math.floor((diff / 1000) % 60)
 
-  return `${days} ${t('day', days)} - ${hours} ${t('hour', hours)} - ${minutes} ${t('minute', minutes)} - ${seconds} ${t('second', seconds)}`.toLocaleLowerCase()
+  return `${days} ${t('day', days)} - ${hours} ${t('hour', hours)} - ${minutes} ${t('minute', minutes)}`
 }
 const countdownUpdated = ref(countdown())
 
@@ -72,8 +73,8 @@ onUnmounted(() => clearInterval(interval))
 
 <style scoped lang="scss">
 .c-homeview {
-  @apply flex flex-col items-center justify-start gap-32 py-32 container;
-  @apply max-md:px-3 max-md:py-16 max-md:gap-16;
+  @apply flex flex-col items-center justify-start gap-32 container;
+  @apply max-md:gap-16;
 
   &__hero {
     @apply flex flex-col items-center gap-6 text-center;
@@ -98,6 +99,18 @@ onUnmounted(() => clearInterval(interval))
 
   &__information {
     @apply flex flex-col items-center gap-3 max-w-[540px] text-center;
+  }
+}
+</style>
+
+<style lang="scss">
+.c-homeview {
+  &__hero {
+    &__title {
+      > span {
+        @apply whitespace-nowrap;
+      }
+    }
   }
 }
 </style>

@@ -6,6 +6,7 @@ import router from './router'
 import locales from '@/locales/locales'
 import dayjs from '@/plugins/Dayjs'
 import './assets/css/main.scss'
+import { createHead } from '@unhead/vue'
 
 const i18n = createI18n({
   locale: 'es',
@@ -16,6 +17,7 @@ const i18n = createI18n({
 
 const app = createApp(App)
 
+app.use(createHead())
 app.use(createPinia())
 app.use(router)
 app.use(i18n)
