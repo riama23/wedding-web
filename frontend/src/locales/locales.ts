@@ -13,9 +13,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
     de: '2024/09/28'
   },
   wedding_time: {
-    es: '12:00',
-    en: '12:00',
-    de: '12:00'
+    es: '12:30',
+    en: '12:30',
+    de: '12:30'
   },
   day: {
     es: 'Día|Días',
@@ -85,9 +85,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
   },
   'home-cta': { es: `Confirmación Asistencia`, en: `RSVP`, de: `RSVP` },
   'home-resume-preparty': {
-    es: 'Preboda de pintxos <br>(Bilbao)',
+    es: 'Preboda <br>(Bilbao)',
     en: 'Pre-wedding party <br>(Bilbao)',
-    de: 'Vor-Hochzeitsfeier <br>(Bilbao)'
+    de: 'Pre-wedding party <br>(Bilbao)'
   },
   'home-resume-wedding': {
     es: 'Iglesia de la Asunción de Nuestra Señora <br>12.00 (Bakio)',
@@ -105,9 +105,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
     de: 'Kirche der Asunción de Nuestra Señora <br> 12.00h (Bakio)'
   },
   'home-information-church-content': {
-    es: 'La misa será en la Iglesia de la Asunción de Nuestra Señora a las 12:00 h.<br>Se tarda aproximadamente 35 minutos desde Bilbao en coche. Habrá servicio de autobuses desde Bilbao y Las Arenas, con diferentes paradas, entre ellas los hoteles NH Deusto, Barceló Bilbao Nervión y Occidental Bilbao.',
-    en: 'The mass will be held in the Church of Santa María de la Asunción in Bakio at 12:00h. <br>It takes approximately 35 minutes from Bilbao by car. There will be shuttle service from Bilbao and Las Arenas, with different stops, including the NH Deusto, Barceló Bilbao Nervión and Occidental Bilbao hotels.',
-    de: 'Die Messe findet um 12:00 Uhr in der Kirche Santa María de la Asunción in Bakio statt. <br> Von Bilbao aus sind es etwa 35 Minuten mit dem Auto. Von Bilbao und Las Arenas aus wird es einen Shuttle-Service mit verschiedenen Haltestellen geben, darunter die Hotels NH Deusto, Barceló Bilbao Nervión und Occidental Bilbao.'
+    es: 'La misa será en la Iglesia de la Asunción de Nuestra Señora a las 12:30 h.<br>Se tarda aproximadamente 35 minutos desde Bilbao en coche. Habrá servicio de autobuses desde Bilbao y Las Arenas, con diferentes paradas.',
+    en: 'The mass will be held in the Church of Santa María de la Asunción in Bakio at 12:30h. <br>It takes approximately 35 minutes from Bilbao by car. There will be shuttle service from Bilbao and Las Arenas, with different stops.',
+    de: 'Die Messe findet um 12:30 Uhr in der Kirche Santa María de la Asunción in Bakio statt. <br> Von Bilbao aus sind es etwa 35 Minuten mit dem Auto. Von Bilbao und Las Arenas aus wird es einen Shuttle-Service mit verschiedenen Haltestellen geben.'
   },
   'home-information-restaurant': {
     es: 'Baserri Maitea (Forua)',
@@ -170,9 +170,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
   },
   'list-title': { es: `Lista de Bodas`, en: `Wedding List`, de: `Hochzeitsliste` },
   'list-t1': {
-    es: `Sin duda nuestro mejor regalo es poder compartir y disfrutar este día tan importante con todos vosotros. Si aún así queréis ayudarnos en nuestra nueva etapa, ponemos a vuestra disposición el siguiente número de cuenta:<br><br><strong>ES58 0182 5322 2302 0026 7481</strong>`,
-    en: `Undoubtedly our best gift is to be able to share and enjoy this important day with all of you. If you still want to help us in our new stage, we share with you the following account number:<br><br><strong>ES58 0182 5322 2302 0026 7481</strong>`,
-    de: `Es ist zweifellos unser schönstes Geschenk, diesen wichtigen Tag mit euch allen teilen und genießen zu können. Wenn ihr uns aber in unserer neuen Lebensphase unterstützen wollt, stellen wir euch die folgende Kontonummer zur Verfügung:<br><br><strong>ES58 0182 5322 2302 0026 7481</strong>`
+    es: `Sin duda nuestro mejor regalo es poder compartir y disfrutar este día tan importante con todos vosotros. Pero si queréis ayudarnos en nuestra nueva etapa, ponemos a vuestra disposición el siguiente número de cuenta:<br><br><strong>AT20 3506 6000 0008 8765</strong>`,
+    en: `Undoubtedly our best gift is to be able to share and enjoy this important day with all of you. But if you want to help us in our new stage, we share with you the following account number:<br><br><strong>AT20 3506 6000 0008 8765</strong>`,
+    de: `Es ist zweifellos unser schönstes Geschenk, diesen wichtigen Tag mit euch allen teilen und genießen zu können. Aber wenn ihr uns in unserer neuen Lebensphase unterstützen wollt, stellen wir euch die folgende Kontonummer zur Verfügung:<br><br><strong>AT20 3506 6000 0008 8765</strong>`
   },
   //////////////////////////////////////////
   // Other Information

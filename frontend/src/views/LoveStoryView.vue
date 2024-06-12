@@ -7,11 +7,15 @@
       <div class="c-love-story__story__text">
         <p v-html="$t('lovestory-t1')"></p>
       </div>
-      <img src="../assets/images/image-example.jpg" alt="" />
+      <img
+        class="aspect-[4/3] shadow-xl rounded"
+        src="https://images.monika-enrique.com/images/1.JPG"
+        alt=""
+      />
     </div>
 
     <div class="c-love-story__story">
-      <img src="../assets/images/image-example.jpg" alt="" />
+      <img class="shadow-xl rounded" src="https://images.monika-enrique.com/images/2.jpg" alt="" />
       <div class="c-love-story__story__text">
         <p v-html="$t('lovestory-t2')"></p>
       </div>
@@ -21,11 +25,19 @@
       <div class="c-love-story__story__text">
         <p v-html="$t('lovestory-t3')"></p>
       </div>
-      <img src="../assets/images/image-example.jpg" alt="" />
+      <img
+        class="shadow-xl rounded aspect-[16/10]"
+        src="https://images.monika-enrique.com/images/3.JPG"
+        alt=""
+      />
     </div>
 
     <div class="c-love-story__story">
-      <img src="../assets/images/image-example.jpg" alt="" />
+      <img
+        class="shadow-xl rounded"
+        src="https://images.monika-enrique.com/images/1.2.jpg"
+        alt=""
+      />
       <div class="c-love-story__story__text">
         <p v-html="$t('lovestory-t4')"></p>
       </div>
