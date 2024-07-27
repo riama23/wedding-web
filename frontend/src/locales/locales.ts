@@ -170,9 +170,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
   },
   'list-title': { es: `Lista de Bodas`, en: `Wedding List`, de: `Hochzeitsliste` },
   'list-t1': {
-    es: `Sin duda nuestro mejor regalo es poder compartir y disfrutar este día tan importante con todos vosotros. Pero si queréis ayudarnos en nuestra nueva etapa, ponemos a vuestra disposición el siguiente número de cuenta:<br><br><strong>AT20 3506 6000 0008 8765</strong>`,
-    en: `Undoubtedly our best gift is to be able to share and enjoy this important day with all of you. But if you want to help us in our new stage, we share with you the following account number:<br><br><strong>AT20 3506 6000 0008 8765</strong>`,
-    de: `Es ist zweifellos unser schönstes Geschenk, diesen wichtigen Tag mit euch allen teilen und genießen zu können. Aber wenn ihr uns in unserer neuen Lebensphase unterstützen wollt, stellen wir euch die folgende Kontonummer zur Verfügung:<br><br><strong>AT20 3506 6000 0008 8765</strong>`
+    es: `Sin duda nuestro mejor regalo es poder compartir y disfrutar este día tan importante con todos vosotros. Pero si queréis ayudarnos en nuestra nueva etapa, ponemos a vuestra disposición el siguiente número de cuenta:<br><br><strong>AT20 3506 6000 0008 8765</strong> <br> BIC / Swift : RVSAAT2S066`,
+    en: `Undoubtedly our best gift is to be able to share and enjoy this important day with all of you. But if you want to help us in our new stage, we share with you the following account number:<br><br><strong>AT20 3506 6000 0008 8765</strong> <br> BIC / Swift : RVSAAT2S066`,
+    de: `Es ist zweifellos unser schönstes Geschenk, diesen wichtigen Tag mit euch allen teilen und genießen zu können. Aber wenn ihr uns in unserer neuen Lebensphase unterstützen wollt, stellen wir euch die folgende Kontonummer zur Verfügung:<br><br><strong>AT20 3506 6000 0008 8765</strong> <br> BIC / Swift : RVSAAT2S066`
   },
   //////////////////////////////////////////
   // Other Information
