@@ -1,0 +1,40 @@
+name: Docker Image CI
+
+on:
+  workflow_call:
+    inputs:
+      BRANCH:
+        required: true
+        type: string
+      ENV:
+        required: true
+        type: string
+      PROJECT:
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      BRANCH:
+        description: "Branch"
+        required: true
+        default: "master"
+      ENV:
+        type: environment
+        description: 'Environment to run the image on'
+        default: 'staging01'
+      PROJECT:
+        type: choice
+        description: "Project to build"
+        options:
+          - "external-widget"
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
