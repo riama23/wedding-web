@@ -13,9 +13,9 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
     de: '2024/09/28'
   },
   wedding_time: {
-    es: '12.30',
-    en: '12.30',
-    de: '12.30'
+    es: '13.00',
+    en: '13.00',
+    de: '13.00'
   },
   day: {
     es: 'Día|Días',
@@ -85,14 +85,14 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
   },
   'home-cta': { es: `Confirmación Asistencia`, en: `RSVP`, de: `RSVP` },
   'home-resume-preparty': {
-    es: 'Preboda <br>(Bilbao)',
-    en: 'Pre-wedding party <br>(Bilbao)',
-    de: 'Pre-wedding party <br>(Bilbao)'
+    es: 'Preboda en <a class="text-dark-green" href="https://maps.app.goo.gl/mAAVZ1hi8BooVvAd7">Bar Frentealagua</a><br> 19.30h (Bilbao)',
+    en: 'Pre-wedding party at <a class="text-dark-green" href="https://maps.app.goo.gl/mAAVZ1hi8BooVvAd7">Bar Frentealagua</a><br> 19.30h (Bilbao)',
+    de: 'Pre-wedding party in der <a class="text-dark-green" href="https://maps.app.goo.gl/mAAVZ1hi8BooVvAd7">Bar Frentealagua</a><br> 19.30h (Bilbao)'
   },
   'home-resume-wedding': {
-    es: 'Iglesia de la Asunción de Nuestra Señora <br>12.30h (Bakio)',
-    en: 'Church of Santa María de la Asunción <br>12.30h (Bakio)',
-    de: 'Kirche Santa María de la Asunción <br>12.30h (Bakio)'
+    es: 'Iglesia de la Asunción de Nuestra Señora <br>13.00h (Bakio)',
+    en: 'Church of Santa María de la Asunción <br>13.00h (Bakio)',
+    de: 'Kirche Santa María de la Asunción <br>13.00h (Bakio)'
   },
   'home-resume-party': {
     es: 'Baserri Maitea <br>(Forua)',
@@ -100,14 +100,14 @@ const keyStrings: { [key: string]: { [key: string]: string } } = {
     de: 'Baserri Maitea <br>(Forua)'
   },
   'home-information-church': {
-    es: 'Iglesia de la Asunción de Nuestra Señora <br> 12.30h (Bakio)',
-    en: 'Church of the Asunción de Nuestra Señora <br> 12.30h (Bakio)',
-    de: 'Kirche der Asunción de Nuestra Señora <br> 12.30h (Bakio)'
+    es: 'Iglesia de la Asunción de Nuestra Señora <br> 13.00h (Bakio)',
+    en: 'Church of the Asunción de Nuestra Señora <br> 13.00h (Bakio)',
+    de: 'Kirche der Asunción de Nuestra Señora <br> 13.00h (Bakio)'
   },
   'home-information-church-content': {
-    es: 'La ceremonia será en la Iglesia de la Asunción de Nuestra Señora a las 12.30h.<br>Se tarda aproximadamente 35 minutos desde Bilbao en coche. Habrá servicio de autobuses desde Bilbao y Las Arenas, con diferentes paradas.',
-    en: 'The mass will be held in the Church of Santa María de la Asunción in Bakio at 12.30h. <br>It takes approximately 35 minutes from Bilbao by car. There will be shuttle service from Bilbao and Las Arenas, with different stops.',
-    de: 'Die Messe findet um 12.30h in der Kirche Santa María de la Asunción in Bakio statt. <br> Von Bilbao aus sind es etwa 35 Minuten mit dem Auto. Von Bilbao und Las Arenas aus wird es einen Shuttle-Service mit verschiedenen Haltestellen geben.'
+    es: 'La ceremonia será en la Iglesia de la Asunción de Nuestra Señora a las 13.00h.<br>Se tarda aproximadamente 35 minutos desde Bilbao en coche. Habrá servicio de autobuses desde Bilbao y Las Arenas, con diferentes paradas.',
+    en: 'The mass will be held in the Church of Santa María de la Asunción in Bakio at 13.00h. <br>It takes approximately 35 minutes from Bilbao by car. There will be shuttle service from Bilbao and Las Arenas, with different stops.',
+    de: 'Die Messe findet um 13.00h in der Kirche Santa María de la Asunción in Bakio statt. <br> Von Bilbao aus sind es etwa 35 Minuten mit dem Auto. Von Bilbao und Las Arenas aus wird es einen Shuttle-Service mit verschiedenen Haltestellen geben.'
   },
   'home-information-restaurant': {
     es: 'Baserri Maitea (Forua)',
